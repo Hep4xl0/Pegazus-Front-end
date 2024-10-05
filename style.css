@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #2BC866; /* Cor dos textos */
+}
+
+.header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #1A9047; /* Cor principal */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #004AAD; /* Cor para links */
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #2BC866; /* Efeito hover */
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons button {
+    background-color: transparent;
+    border: 2px solid #1A9047; /* Cor dos botões */
+    color: #1A9047;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.auth-buttons .signup-btn {
+    background-color: #1A9047; /* Botão de destaque */
+    color: white;
+}
+
+.auth-buttons button:hover {
+    opacity: 0.8;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f4f7fa;
+}
+
+.main-content h2 {
+    font-size: 36px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: #2BC866; /* Cor dos títulos de seção */
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    
+}
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.call-to-action h2 {
+    color: #2BC866; /* Título Call to Action */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.call-to-action .signup-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #1A9047; /* Botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action .signup-btn:hover {
+    background-color: #2BC866; /* Efeito hover */
+}
+
+/* Caixa de Pesquisa */
+.search-box {
+    margin-top: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background-color: #1A9047; /* Botão de pesquisa */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #2BC866; /* Efeito hover */
+}
+
+/* Seção com Imagem de Fundo */
+.background-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.background-image img {
+    max-width: 100%; 
+    height: auto;
+}
+
+/* Seção de Promoção */
+.promo-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #2BC866; /* Fundo de Promoção */
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.promo-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.promo-text h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.promo-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+.promo-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.promo-image img {
+    width: 500px;
+    height: auto; /* Alterado para manter a proporção */
+}
+
+
+/* Seção de Ajuda */
+.help-section {
+    padding: 50px 20px;
+    background-color: #f4f7fa;
+}
+
+.help-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
+.help-image {
+    margin-bottom: 20px; 
+}
+
+.help-image img {
+    width: 600px;
+}
+
+.help-text {
+    text-align: center;
+}
+
+.help-text h2 {
+    font-size: 32px;
+
+}
+
+.help-text p {
+    font-size: 18px;
+    color: #2BC866; /* Textos de Ajuda */
+}
+
+.help-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.option-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 23%;
+    padding: 20px;
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+}
+
+.option-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.option-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.option-card p, .option-card ul {
+    font-size: 16px;
+    color: #2BC866; /* Textos dos Cards */
+    line-height: 1.5;
+}
+
+.option-card ul {
+    padding-left: 20px;
+}
+
+.option-card ul li {
+    margin-bottom: 10px;
+}
